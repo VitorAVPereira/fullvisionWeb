@@ -1,0 +1,32 @@
+.card {
+    background-color: #272727;
+    width: 400px;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 50px !important;
+    margin-right: auto !important;
+    margin-bottom: 50px !important;
+}
+
+.title {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 120px !important;
+    margin-right: 10px !important;
+    padding: 15px 15px;
+    border: 0;
+    background: hsl(36, 97%, 63%);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
