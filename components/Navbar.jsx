@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Button from './Anchor'
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -31,18 +33,18 @@ const Navbar = () => {
             <Link href='/'>
                 <h1 style={{color: `${textColor}`}} className='font-bold text-4xl'>Fullvision</h1>
             </Link>
-            <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
-                <li className='p-4'>
-                    <Link href=''>Início</Link>
+            <ul style={{color: `${textColor}`}} className='hidden sm:flex align-middle'>
+                <li className='p-4 mt-1'>
+                    <Link href='/'>Início</Link>
                 </li>
-                <li className='p-4'>
-                    <Link href='/#trackapp'>Rastreie seu veículo</Link>
-                </li>
-                <li className='p-4'>
+                <li className='p-4 mt-1'>
                     <Link href='/contact'>Contato</Link>
                 </li>
-                <li className='p-4'>
+                <li className='p-4 mt-1'>
                     <Link href='/about'>Sobre nós</Link>
+                </li>
+                <li className='p-4'>
+                    <Button href="https://www.fullvision.sincrosolucoes.com.br">Rastrear<BsBoxArrowUpRight className='ml-2'/></Button>
                 </li>
             </ul>
 
@@ -64,13 +66,13 @@ const Navbar = () => {
                         <Link href=''>Início</Link>
                     </li>
                     <li className='p-4 text-4xl hover:text-gray-500'>
-                        <Link href='/#trackapp'>Rastreie seu veículo</Link>
-                    </li>
-                    <li className='p-4 text-4xl hover:text-gray-500'>
                         <Link href='/contact'>Contato</Link>
                     </li>
                     <li className='p-4 text-4xl hover:text-gray-500'>
                         <Link href='/about'>Sobre nós</Link>
+                    </li>
+                    <li>
+                        <Button href="https://www.fullvision.sincrosolucoes.com.br">Rastrear<BsBoxArrowUpRight className='ml-5'/></Button>
                     </li>
                 </ul>
             </div>
