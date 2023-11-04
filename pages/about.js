@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutImage from '@/components/AboutImage'
 
 const about = () => {
   return (
-    <div>about</div>
+    <div>
+      <AboutImage />
+    </div>
   )
 }
 
