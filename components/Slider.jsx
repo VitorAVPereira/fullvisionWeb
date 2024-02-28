@@ -23,7 +23,7 @@ if(!Array.isArray(slides) || slides.length <= 0){
           <div className='relative justify-center lg:max-w-fit '>
         {SliderData.map((slide, index) => {
             return( 
-                <div key={index} className={index === current ? 'opacity-[1] ease-in duration-500' : 'opacity-0'}>
+                <div key={index} className={index === current ? 'opacity-[1]' : 'opacity-0'}>
                     <FaArrowCircleLeft 
                         onClick={prevSlide}
                         className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]' 
